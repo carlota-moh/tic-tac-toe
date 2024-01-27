@@ -1,6 +1,6 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -11,7 +11,7 @@ homepage:       https://github.com/carlota-moh/tic-tac-toe#readme
 bug-reports:    https://github.com/carlota-moh/tic-tac-toe/issues
 author:         Carlota Monedero
 maintainer:     carlota.monederoh@gmail.com
-copyright:      2024 Author name here
+copyright:      2024 Carlota Monedero
 license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
@@ -28,6 +28,8 @@ library
       Lib
   other-modules:
       Paths_tic_tac_toe
+  autogen-modules:
+      Paths_tic_tac_toe
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -38,6 +40,8 @@ library
 executable tic-tac-toe-exe
   main-is: Main.hs
   other-modules:
+      Paths_tic_tac_toe
+  autogen-modules:
       Paths_tic_tac_toe
   hs-source-dirs:
       app
@@ -51,6 +55,8 @@ test-suite tic-tac-toe-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Paths_tic_tac_toe
+  autogen-modules:
       Paths_tic_tac_toe
   hs-source-dirs:
       test

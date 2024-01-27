@@ -1,6 +1,6 @@
 name:                tic-tac-toe
 version:             0.1.0.0
-github:              "https://github.com/carlota-moh/tic-tac-toe"
+github:              "carlota-moh/tic-tac-toe"
 license:             BSD-3-Clause
 author:              "Carlota Monedero"
 maintainer:          "carlota.monederoh@gmail.com"
